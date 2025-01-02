@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Awareness Campaign</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f9f9, #d3e0ea);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(to right, #76c893, #2d6a4f);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .header-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .header-button {
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #2d6a4f, #76c893);
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header-button:hover {
+            background: linear-gradient(45deg, #76c893, #2d6a4f);
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .stat {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+        .stat h2 {
+            font-size: 2rem;
+            color: #2d6a4f;
+            margin: 0;
+        }
+        .stat p {
+            font-size: 1rem;
+            margin: 10px 0 0;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .card p {
+            font-size: 1rem;
+            margin: 10px 0 0;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card:hover img {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        footer {
+            background: #2d6a4f;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #76c893;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tree Awareness Campaign</h1>
+        <p>Join us in preserving the lungs of our cities for a healthier future!</p>
+        <div class="header-buttons">
+            <a href="homepage.html"><button class="header-button">Home</button></a>
+            <a href="description.html"><button class="header-button">Description of Trees</button></a>
+            <a href="aboutus.html"><button class="header-button">About Us</button></a>
+            <a href="contact.html"><button class="header-button">Contact</button></a>
+            <a href="quiz.html"><button class="header-button">Quiz</button></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="stats">
+            <div class="stat">
+                <h2>70%</h2>
+                <p>of urban air pollution is mitigated by trees.</p>
+            </div>
+            <div class="stat">
+                <h2>1 Million</h2>
+                <p>trees planted annually can offset 2% of global CO2.</p>
+            </div>
+            <div class="stat">
+                <h2>10%</h2>
+                <p>increase in tree cover reduces urban heat by 4°C.</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="oak.jpg" alt="Oak Tree">
+                <p>The Oak tree is a sturdy and long-lived species with lobed leaves and acorns. Its strong branches make it an iconic park feature.</p><br><br>
+
+                <p>Uses : Providing shade, supporting wildlife, timber production.</p>
+            </div>
+            <div class="card">
+                <img src="maple.webp" alt="Maple Tree">
+                <p>Famous for its vibrant autumn foliage in shades of red, orange, and yellow, the Maple tree is an ornamental favorite.</p><br><br>
+
+                <p>Uses : Aesthetic purposes, syrup production, shade.</p>
+            </div>
+            <div class="card">
+                <img src="palm.webp" alt="Palm Tree">
+                <p> Found in tropical and subtropical regions, Palm trees have tall, slender trunks and fan-like leaves.</p><br><br>
+
+                <p> Uses: Landscaping, providing coconuts or dates, adding a tropical aesthetic.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Tree Sustainability Initiative | <a href="#">Contact Us</a>
+    </footer>
+
+</body>
+</html>

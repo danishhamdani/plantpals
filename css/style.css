@@ -1,0 +1,57 @@
+/********** Template CSS **********/
+:root {
+    --primary: #34AD54;
+    --secondary:#DAA06D;
+    --light: #F6FFF2;
+    --dark: #263A4F;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #ffffff;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding: 30px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+
+.bg-hero {
+    background: url(../img/carousel-1.jpg) top left no-repeat;
+    background-size: cover;
+}
+.bg-footer {
+    background: linear-gradient(rgba(52, 173, 84, .7), rgba(52, 173, 84, .7)), url(../img/footer.png) center bottom no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 991.98px) {
+    .bg-footer {
+        margin-top: 90px !important;
+    }
+}
