@@ -1,0 +1,331 @@
+/********** Template CSS **********/
+:root {
+    --primary: #34AD54;
+    --secondary: #DAA06D;
+    --light: #F6FFF2;
+    --dark: #263A4F;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #ffffff;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f9f9, #d3e0ea);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background: linear-gradient(to right, #76c893, #2d6a4f);
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Main Section */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.main-content p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+}
+
+.sidebar .card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-grow: 1;
+}
+
+.sidebar .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #76c893;
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2d6a4f;
+
+
+}
+
+
+/* Container for Stats and Cards */
+.container {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.stat h2 {
+    font-size: 2rem;
+    color: #2d6a4f;
+    margin: 0;
+}
+
+.stat p {
+    font-size: 1rem;
+    margin: 10px 0 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 10px 0 0;
+}
+
+.card li {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2d6a4f;
+    text-align: left;
+
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Quiz Button */
+.quiz-button-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+}
+
+/* Button Styling */
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 38px;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    background-color: #1DC9A0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.15s linear;
+}
+
+button:hover {
+    background-color: rgba(29, 201, 160, 0.08);
+    border-color: #1DC9A0;
+    color: #1DC9A0;
+    transform: translateY(-5px) scale(1.05);
+}
+
+button:active {
+    background-color: transparent;
+    border-color: #1DC9A0;
+    color: #1DC9A0;
+    transform: translateY(5px) scale(0.95);
+}
+
+button:disabled {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #8E8E93;
+    border-color: #8E8E93;
+}
+
+.footer .container {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+/*Description*/
+
+.desc-container {
+    text-align: justify;
+    padding: 2%;
+    width: fit-content;
+    height:fit-content;
+}
+
+.desc-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: justify;
+    gap: 10px;
+}
+
+.desc-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 3000px;
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.desc-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.desc-card p, li {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2d6a4f;
+}
