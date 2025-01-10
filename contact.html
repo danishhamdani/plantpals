@@ -227,27 +227,31 @@
 
     <script>
     document.querySelector('.contact-form-area form').addEventListener('submit', function (e) {
-        const name = document.querySelector('name').value.trim();
-        const email = document.querySelector('email').value.trim();
-        const subject = document.querySelector('subject').value.trim();
-        const message = document.querySelector('message').value.trim();
+        e.preventDefault(); // Prevent the default form submission behavior
+
+        const name = document.querySelector('#name').value.trim();
+        const email = document.querySelector('#email').value.trim();
+        const subject = document.querySelector('#subject').value.trim();
+        const message = document.querySelector('#message').value.trim();
 
         // Check if all fields are filled
         if (!name || !email || !subject || !message) {
-            e.preventDefault(); // Prevent form submission
             alert('Please fill out all fields before submitting.');
             return;
         }
 
-        // Additional check: Validate email format
+        // Validate email format
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
-            e.preventDefault();
             alert('Please enter a valid email address.');
             return;
         }
+
+        // If all validations pass, display a success message
+        alert('Message sent successfully!');
     });
 </script>
+
 
 </body>
 
