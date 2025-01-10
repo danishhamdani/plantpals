@@ -140,22 +140,22 @@
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="contact-email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="contact-subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -227,10 +227,10 @@
 
     <script>
     document.querySelector('.contact-form-area form').addEventListener('submit', function (e) {
-        const name = document.querySelector('#name').value.trim();
-        const email = document.querySelector('#email').value.trim();
-        const subject = document.querySelector('#subject').value.trim();
-        const message = document.querySelector('#message').value.trim();
+        const name = document.querySelector('name').value.trim();
+        const email = document.querySelector('email').value.trim();
+        const subject = document.querySelector('subject').value.trim();
+        const message = document.querySelector('message').value.trim();
 
         // Check if all fields are filled
         if (!name || !email || !subject || !message) {
