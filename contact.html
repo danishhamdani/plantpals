@@ -224,6 +224,19 @@
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+
+     <script>
+        document.querySelector('.contact-form form').addEventListener('submit', function (e) {
+            const name = document.querySelector('[name="name"]').value.trim();
+            const email = document.querySelector('[name="email"]').value.trim();
+            const message = document.querySelector('[name="message"]').value.trim();
+        
+            if (!name || !email || !message) {
+                e.preventDefault();
+                alert('Please fill out all fields before submitting.');
+            }
+        });
+    </script>
 </body>
 
 </html>
